@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>educa</title>
+    <!-- CUSTOM SCSS -->
+    <link rel="stylesheet" href="css\style.css">
+    <!-- FONT AWESOME JS  -->
+    <script src="https://kit.fontawesome.com/49b578ec4e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><i class="fas fa-lightbulb"></i> educa</a>
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#corses">courses</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+         </div>
+    </header>
+
+    <!-- ACCOUNT SECTION  -->
+    <div class="account">
+        <div id="close-account" class="fas fa-times"></div>
+        <div class="btn-container">
+            <div class="btn active" data-button="number-1">login</div>
+            <div class="btn" data-button="number-2">registar</div>
+        </div>
+
+        <form action="" class="login common active"  data-target="number-1">
+            <h3>login now</h3>
+            <input type="text" placeholder="enter your email" class="input"><br>
+            <input type="number" placeholder="enter your password" class="input"><br>
+            <div class="checkbox-container">
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me </label>
+                <a href="#">forgot password</a>
+            </div>
+            <input class="btn input" type="submit" value="login now">
+        </form>
+
+        <form action="" class="registar common"  data-target="number-2">
+            <h3>registar now</h3>
+            <input type="text" placeholder="enter your email" class="input"><br>
+            <input type="number" placeholder="enter your password" class="input"><br>
+            <input type="number" placeholder="conform your password" class="input"><br>
+            <input class="btn input" type="submit" value="registar now">
+        </form>
+    </div>
+
+     
+    <!-- CUSTOM JS  -->
+    <script src="js/script.js"></script>
+</body>
+</html>

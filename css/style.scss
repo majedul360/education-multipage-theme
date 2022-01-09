@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+$green:#0eb582;
+$light-green:#f0fdfa;
+$light-color:#777;
+$light-white:#eee;
+$black:#444;
+$white:#fff;
+$border:.1rem solid $green;
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $green;
+    }
+}
+
+@mixin subHeading($size) {
+    font-size: $size;
+    color: $black;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: $light-green;
+    font-size: 1.7rem;
+    color: $green;
+    border: $border;
+    cursor: pointer;
+
+    &.active {
+        background: $green;
+        color: $white;
+    }
+
+    &:hover {
+        background: $green;
+        color: $white;
+    }
+}
+
+header {
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $white;
+    box-shadow: $box-shadow;
+    z-index: 1000;
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        margin-right: auto;
+        font-size: 2.5rem;
+        color: $black;
+
+        i {
+            color: $green;
+            margin-right: .5rem;
+
+        }
+    }
+
+    .navbar {
+        position: relative;
+
+        #close-navbar {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-size: 4rem;
+            color: $black;
+            transform: rotate(90deg);
+            display: none;
+        }
+        a {
+            margin-right:2rem;
+            font-size: 2rem;
+            color: $black;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+
+    .icons div {
+        margin-left: 1.5rem;
+        color: $black;
+        font-size: 2.5rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $green;
+        }
+
+    }
+
+    #menu-btn {
+        display: none;
+    }
+}
+
+// ACCOUNT SECTION
+
+.account {
+    position: fixed;
+    top: 0;
+    right: -36rem;
+    width: 35rem;
+    height: 100%;
+    background: $white;
+    z-index:1200;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem;
+    text-align: center;
+
+    &.active {
+        right: 0;
+    }
+
+    #close-account {
+        position: absolute;
+        top: 1.5rem;
+        right: 2.5rem;
+        font-size: 4rem;
+        cursor: pointer;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .common {
+        padding: 2rem;
+        border: $border;
+        text-align: center;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        h3 {
+            @include subHeading(2.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .input {
+            width: 100%;
+            border: $border;
+            padding: 1.2rem 1.4rem;
+            margin: .7rem 0;
+            text-transform: none;
+            font-size: 1.6rem;
+        }
+
+        .checkbox-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:.5rem;
+            margin: 1rem 0;
+            font-size: 1.4rem;
+
+            label {
+                text-transform: none;
+            }
+
+            a {
+                margin-left: auto;
+                text-transform: none;
+                color: $black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+
+// MEDIA QUEARIES
+@media (max-width:1200px) {
+    header {
+        padding: 2rem 5%;
+    }
+
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header { 
+        padding: 2rem;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    header {
+
+        #menu-btn {
+            display: inline-block;
+        }
+
+        .navbar {
+            #close-navbar {
+                display: block;
+            }
+            position:fixed;
+            top: 0;
+            right: -30rem;
+            width: 30rem;
+            height: 100%;
+            background:$white;
+            z-index: 1200;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+            &.active {
+                box-shadow: 0 0 0 100vw rgba(0, 0, 0, .8);
+                right: 0;
+            }
+
+            a {
+                display: block;
+                margin: 1rem 0;
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}

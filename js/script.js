@@ -49,3 +49,13 @@ accountBtn.addEventListener('click', () => {
 accountClose.addEventListener('click', () => {
     account.classList.remove('active');
 });
+
+// BANNER SLIDER 
+
+var swiper = new Swiper(".banner-slider", {
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

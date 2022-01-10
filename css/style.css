@@ -31,6 +31,13 @@ html::-webkit-scrollbar-thumb {
   background: #0eb582;
 }
 
+.title {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #444;
+  margin: 3rem 0;
+}
+
 .btn {
   display: inline-block;
   padding: 1.2rem 3rem;
@@ -150,6 +157,8 @@ header #menu-btn {
 }
 
 .account.active {
+  -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   right: 0;
 }
 
@@ -269,6 +278,49 @@ header #menu-btn {
 
 .banner .swiper-pagination-bullet-active {
   background: #0eb582;
+}
+
+.subject .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+
+.subject .box-container .box {
+  background: #f0fdfa;
+  border: 0.1rem solid #0eb582;
+  padding: 2rem;
+  text-align: center;
+}
+
+.subject .box-container .box:hover {
+  background: #0eb582;
+  color: #fff;
+  cursor: pointer;
+}
+
+.subject .box-container .box:hover h3,
+.subject .box-container .box:hover p {
+  color: #fff;
+}
+
+.subject .box-container .box img {
+  height: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.subject .box-container .box h3 {
+  font-size: 1.7rem;
+  color: #444;
+}
+
+.subject .box-container .box p {
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 2.5rem;
+  margin: 1rem 0;
 }
 
 @media (max-width: 1200px) {

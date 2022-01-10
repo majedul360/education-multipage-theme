@@ -56,6 +56,19 @@ html {
     margin: 1rem 0;
 }
 
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.5rem;
+    color: $black;
+    margin: 3rem 0;
+}
+
 .btn {
     display:inline-block;
     padding: 1.2rem 3rem;
@@ -163,6 +176,7 @@ header {
     text-align: center;
 
     &.active {
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, .8);
         right: 0;
     }
 
@@ -263,6 +277,44 @@ header {
 
     .swiper-pagination-bullet-active {
         background: $green;
+    }
+}
+
+// SUBJECT SECTION
+.subject {
+    .box-container {
+        @include grid(16rem);
+
+        .box {
+            background: $light-green;
+            border: $border;
+            padding: 2rem;
+            text-align: center;
+
+            &:hover {
+                background: $green;
+                color: $white;
+                cursor: pointer;
+            }
+
+            &:hover h3,
+            &:hover p{
+                color: $white;
+            }
+
+            img {
+                height: 10rem;
+                margin-bottom: 1.5rem;
+            }
+
+            h3 {
+                @include subHeading(1.7rem);
+            }
+
+            p {
+                @include paragraph(1.5rem);
+            }
+        }
     }
 }
 

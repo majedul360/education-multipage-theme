@@ -571,6 +571,83 @@ footer .credit span {
   margin: 1rem 0;
 }
 
+.teacher .slide:hover .img {
+  background: #0eb582;
+}
+
+.teacher .slide:hover .img .icons {
+  bottom: 0;
+}
+
+.teacher .slide .img {
+  position: relative;
+  background: #f0fdfa;
+  text-align: center;
+  overflow: hidden;
+}
+
+.teacher .slide .img img {
+  width: 100%;
+}
+
+.teacher .slide .img .icons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -13rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+}
+
+.teacher .slide .img .icons i {
+  border-radius: 0;
+  font-size: 1.7rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #0eb582;
+  color: #fff;
+  margin-right: .5rem;
+  cursor: pointer;
+  font-size: 3rem;
+  background: none;
+}
+
+.teacher .slide .img .icons i:hover {
+  background: #444;
+}
+
+.teacher .slide .img .icons i:hover {
+  color: #0eb582;
+  background: none;
+}
+
+.teacher .slide .teacher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.teacher .slide .teacher p {
+  font-size: 2rem;
+  color: #444;
+  font-weight: bold;
+}
+
+.teacher .slide .teacher span {
+  font-size: 1.5rem;
+  color: #777;
+  text-transform: none;
+}
+
 @media (max-width: 1200px) {
   header {
     padding: 2rem 5%;

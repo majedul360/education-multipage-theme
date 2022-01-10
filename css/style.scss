@@ -553,7 +553,70 @@ footer {
 }
 
 
+// TEACHER SECTION 
 
+.teacher {
+    .slide {
+        &:hover .img{
+            background: $green;
+        }
+
+        &:hover .img .icons{
+            bottom: 0;
+        }
+
+        .img {
+            position: relative;
+            background: $light-green;
+            text-align: center;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+
+            
+            .icons {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom:-13rem;
+                background:rgba(0, 0, 0, .8);
+                padding: 2rem;
+
+                i {
+                    @include iconStayle(0);
+                    font-size: 3rem;
+                    background: none;
+
+                    &:hover {
+                        color: $green;
+                        background: none;
+                    }
+                }
+            }
+        }
+
+        .teacher {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            p {
+                font-size: 2rem;
+                color: $black;
+                font-weight: bold;
+            }
+
+            span {
+                font-size: 1.5rem;
+                color: $light-color;
+                text-transform: none;
+            }
+        }
+    }
+}
 
 
 

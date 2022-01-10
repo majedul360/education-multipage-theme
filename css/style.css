@@ -648,6 +648,60 @@ footer .credit span {
   text-transform: none;
 }
 
+.review {
+  margin-bottom: 5rem;
+}
+
+.review .slide {
+  text-align: center;
+}
+
+.review .slide p {
+  border: 0.1rem solid #0eb582;
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+  text-align: justify;
+  text-transform: none;
+  padding: 2rem;
+  background: #f0fdfa;
+  position: relative;
+}
+
+.review .slide p::before {
+  position: absolute;
+  content: '';
+  height: 2rem;
+  width: 2rem;
+  border-bottom: 0.1rem solid #0eb582;
+  border-right: 0.1rem solid #0eb582;
+  bottom: -1.2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  background: #f0fdfa;
+}
+
+.review .slide img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin: 1.5rem 0;
+}
+
+.review .slide h3 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.review .slide .icons {
+  font-size: 1.7rem;
+  color: #0eb582;
+  margin-right: .3rem;
+}
+
 @media (max-width: 1200px) {
   header {
     padding: 2rem 5%;

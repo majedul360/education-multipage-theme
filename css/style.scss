@@ -318,6 +318,70 @@ header {
     }
 }
 
+// POPULAR COURSES SECTION
+
+.course {
+        .box {
+            position: relative;
+            background:$light-green;
+            padding: 2rem;
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+
+            &:hover .content{
+                bottom: 0;
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+                
+                h3 {
+                    @include subHeading(2rem);
+                }
+            }
+
+            .content {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom:-70%;
+                background: $green;
+                padding: 2rem;
+
+                h3 {
+                    @include subHeading(2rem);
+                    color:$white;
+                }
+
+                p {
+                    @include paragraph(1.5rem);
+                    color:$white;
+
+                }
+
+                .btn:hover {
+                    background: $black;
+                    color: $white;
+                }
+            }
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 // MEDIA QUEARIES
 @media (max-width:1200px) {
     header {

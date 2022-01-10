@@ -58,4 +58,25 @@ var swiper = new Swiper(".banner-slider", {
       el: ".swiper-pagination",
       clickable: true,
     },
+    grabCursor:true,
+    loop:true,
+  });
+
+// COURSES SLIDER 
+
+var swiper = new Swiper(".course-slider", {
+    loop:true,
+    grabCursor:true,
+    spaceBetween: 20,
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+          },
+        991: {
+            slidesPerView:3,
+          },
+      },
   });

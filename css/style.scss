@@ -470,7 +470,28 @@ footer {
 }
 
 
+// ABOUT PAGES
 
+.common {
+    background: url(../img/heading-bg.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding:5rem 0;
+
+    h2 {
+        @include subHeading(4rem);
+    }
+
+    p {
+        @include paragraph(2rem);
+        text-transform:none;
+
+        span {
+            color: $green;
+            text-transform:none;
+        }
+    }
+}
 
 
 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+    <!-- CUSTOM SCSS  -->
+    <link rel="stylesheet" href="../css\style.css">
+     <!-- SWIPER CSS  -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+     <!-- FONT AWESOME JS  -->
+     <script src="https://kit.fontawesome.com/49b578ec4e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><i class="fas fa-lightbulb"></i> educa</a>
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">courses</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+         </div>
+    </header>
+
+    <!-- ACCOUNT SECTION  -->
+    <div class="account">
+        <div id="close-account" class="fas fa-times"></div>
+        <div class="btn-container">
+            <div class="btn active" data-button="number-1">login</div>
+            <div class="btn" data-button="number-2">registar</div>
+        </div>
+
+        <form action="" class="login common active"  data-target="number-1">
+            <h3>login now</h3>
+            <input type="text" placeholder="enter your email" class="input"><br>
+            <input type="number" placeholder="enter your password" class="input"><br>
+            <div class="checkbox-container">
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me </label>
+                <a href="#">forgot password</a>
+            </div>
+            <input class="btn input" type="submit" value="login now">
+        </form>
+
+        <form action="" class="registar common"  data-target="number-2">
+            <h3>registar now</h3>
+            <input type="text" placeholder="enter your email" class="input"><br>
+            <input type="number" placeholder="enter your password" class="input"><br>
+            <input type="number" placeholder="conform your password" class="input"><br>
+            <input class="btn input" type="submit" value="registar now">
+        </form>
+    </div>
+
+<!-- COURSE SECTION -->
+
+<section class="common">
+    <h2>our courses</h2>
+    <p><span>home</span> / courses</p>
+</section>
+
+
+<!-- FOOTER  -->
+<footer>
+    <div class="box-container">
+        <div class="box">
+            <a href="#" class="logo">educa</a>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, tempore.
+            </p>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <div class="links">
+                <a href="">home</a>
+                <a href="">about</a>
+                <a href="">courses</a>
+                <a href="">contact</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>useful links</h3>
+            <div class="links">
+                <a href="">help center</a>
+                <a href="">ask questions</a>
+                <a href="">send feedback</a>
+                <a href="">private policy</a>
+                <a href="">terms of use</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>
+                subscribe for latest updates
+            </p>
+            <form action="">
+                <input class="input" placeholder="enter your email" type="email">
+                <input type="submit" class="btn" value="subscribe">
+            </form>
+        </div>
+    </div>
+    <hr>
+    <p class="credit">
+        created by <span> mr. majedul islam </span>&copy; 2022 | all rights reserved!
+    </p>
+</footer>
+    <!-- SWIPER JS  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- CUSTOM JS  -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

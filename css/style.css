@@ -374,6 +374,101 @@ header #menu-btn {
   color: #fff;
 }
 
+footer {
+  background: #f0fdfa;
+  padding: 3rem 10%;
+}
+
+footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+footer .box-container .box .logo {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #444;
+}
+
+footer .box-container .box .logo i {
+  color: #0eb582;
+  margin-right: .5rem;
+}
+
+footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+}
+
+footer .box-container .box .icons {
+  margin-top: 2rem;
+}
+
+footer .box-container .box .icons i {
+  border-radius: 0;
+  font-size: 1.7rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #0eb582;
+  color: #fff;
+  margin-right: .5rem;
+  cursor: pointer;
+}
+
+footer .box-container .box .icons i:hover {
+  background: #444;
+}
+
+footer .box-container .box h3 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+footer .box-container .box .links a {
+  font-size: 1.7rem;
+  color: #777;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+  display: block;
+  margin: 1.5rem 0;
+}
+
+footer .box-container .box .links a:hover {
+  text-decoration: underline;
+  color: #0eb582;
+}
+
+footer .box-container .box form .input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  text-transform: none;
+  border: 0.1rem solid #0eb582;
+}
+
+footer hr {
+  border-top: 0.1rem solid #0eb582;
+  margin: 4rem 0;
+}
+
+footer .credit {
+  text-align: center;
+  font-size: 2rem;
+  color: #444;
+}
+
+footer .credit span {
+  color: #0eb582;
+}
+
 @media (max-width: 1200px) {
   header {
     padding: 2rem 5%;
@@ -383,6 +478,9 @@ header #menu-btn {
   }
   .banner .slide {
     padding: 0 5%;
+  }
+  footer {
+    padding: 3rem 5%;
   }
 }
 
@@ -398,6 +496,9 @@ header #menu-btn {
   }
   .banner .slide {
     padding: 0 2rem;
+  }
+  footer {
+    padding: 3rem 2rem;
   }
 }
 

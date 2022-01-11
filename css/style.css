@@ -702,6 +702,158 @@ footer .credit span {
   margin-right: .3rem;
 }
 
+.famous-courses {
+  margin-bottom: 5rem;
+}
+
+.famous-courses .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.famous-courses .box-container .box:hover .img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.famous-courses .box-container .box.hide {
+  display: none;
+}
+
+.famous-courses .box-container .box.hide.active {
+  display: block;
+}
+
+.famous-courses .box-container .box .img {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.famous-courses .box-container .box .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.famous-courses .box-container .box .img span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: .5rem 1rem;
+  background: #fff;
+  font-size: 1.5rem;
+}
+
+.famous-courses .box-container .box .content {
+  padding: 1.5rem;
+  border: 0.1rem solid #0eb582;
+  text-align: center;
+}
+
+.famous-courses .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #444;
+}
+
+.famous-courses .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+}
+
+.famous-courses .box-container .box .content hr {
+  border-top: 0.1rem solid #0eb582;
+  margin: 1.5rem 0;
+  margin-top: 4rem;
+}
+
+.famous-courses .box-container .box .content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.famous-courses .box-container .box .content .row p {
+  font-size: 1.7rem;
+  color: #444;
+}
+
+.famous-courses .box-container .box .content .row p i {
+  color: #0eb582;
+  margin-right: .5rem;
+}
+
+.famous-courses .popular-courses-control-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.touch .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.touch .box-container .box {
+  text-align: center;
+  border: 0.1rem solid #0eb582;
+  padding: 2rem 0;
+  background: #f0fdfa;
+}
+
+.touch .box-container .box:nth-child(3) p {
+  text-transform: none;
+}
+
+.touch .box-container .box i {
+  border-radius: 50%;
+  font-size: 1.7rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #0eb582;
+  color: #fff;
+  margin-right: .5rem;
+  cursor: pointer;
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2rem;
+}
+
+.touch .box-container .box i:hover {
+  background: #444;
+}
+
+.touch .box-container .box h3 {
+  font-size: 2rem;
+  color: #444;
+  margin: 1.5rem;
+}
+
+.touch .box-container .box p {
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+}
+
 @media (max-width: 1200px) {
   header {
     padding: 2rem 5%;

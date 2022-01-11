@@ -119,3 +119,14 @@ var swiper = new Swiper(".review-slider", {
       },
   });
 
+// POPULAR COURSES SECTION 
+
+let course = document.querySelectorAll('.famous-courses .box-container .hide');
+let courseAddedBtn = document.querySelector('.famous-courses .popular-courses-control-btn');
+
+courseAddedBtn.addEventListener('click', () => {
+  course.forEach(famousCourse => {
+    famousCourse.classList.add('active');
+  });
+  courseAddedBtn.style.display = "none";
+});

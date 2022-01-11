@@ -897,6 +897,88 @@ footer .credit span {
   border: 0.1rem solid #0eb582;
 }
 
+.faq .accordian-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 3rem;
+}
+
+.faq .accordian-container .accordian {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  border: 0.1rem solid #0eb582;
+}
+
+.faq .accordian-container .accordian.active .accordian-heading {
+  background: #0eb582;
+}
+
+.faq .accordian-container .accordian.active .accordian-heading h3 {
+  color: #fff;
+}
+
+.faq .accordian-container .accordian.active .accordian-heading i {
+  color: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq .accordian-container .accordian.active .accordian-content {
+  display: block;
+}
+
+.faq .accordian-container .accordian .accordian-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.faq .accordian-container .accordian .accordian-heading h3 {
+  font-size: 2rem;
+  color: #444;
+}
+
+.faq .accordian-container .accordian .accordian-heading i {
+  font-size: 2rem;
+}
+
+.faq .accordian-container .accordian .accordian-content {
+  font-size: 1.4rem;
+  color: #777;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+  padding: 2rem;
+  margin: 0;
+  display: none;
+}
+
+.logo-container {
+  margin: 5rem 0;
+}
+
+.logo-container .swiper-slide {
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   header {
     padding: 2rem 5%;

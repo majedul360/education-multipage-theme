@@ -50,6 +50,18 @@ accountClose.addEventListener('click', () => {
     account.classList.remove('active');
 });
 
+// FAQ SECTION 
+
+let accordion = document.querySelectorAll('.accordian');
+
+accordion.forEach(acco =>{
+  acco.addEventListener('click', () => {
+    accordion.forEach(newAcco => newAcco.classList.remove('active'));
+    acco.classList.toggle('active');
+  })
+ 
+});
+
 // BANNER SLIDER 
 
 var swiper = new Swiper(".banner-slider", {
@@ -119,14 +131,42 @@ var swiper = new Swiper(".review-slider", {
       },
   });
 
-// POPULAR COURSES SECTION 
+
+  //   CONTACT PAGE LOGO SLIDER
+
+var swiper = new Swiper(".logo-slider", {
+  loop:true,
+  grabCursor:true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+
+// FAMOUS COURSES SECTION 
 
 let course = document.querySelectorAll('.famous-courses .box-container .hide');
-let courseAddedBtn = document.querySelector('.famous-courses .popular-courses-control-btn');
+let courseBtn = document.querySelector('#famous-courses-btn');
 
-courseAddedBtn.addEventListener('click', () => {
+courseBtn.addEventListener('click', () => {
   course.forEach(famousCourse => {
     famousCourse.classList.add('active');
   });
-  courseAddedBtn.style.display = "none";
+  courseBtn.style.display = "none";
 });
+

@@ -828,9 +828,70 @@ footer {
 }
 
 
+// FAQ SECTION 
 
+.faq {
+    .accordian-container {
+        @include flex(flex-start);
 
+        .accordian {
+            flex: 1 1 40rem;
+            border: $border;
+            
 
+            &.active {
+                .accordian-heading {
+                    background: $green;
+
+                    h3 {
+                        color: $white;
+                    }
+
+                    i {
+                        color: $white;
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .accordian-content {
+                    display: block;
+                }
+            }
+
+            .accordian-heading {
+                @include flex(center);
+                justify-content: space-between;
+                gap: 1rem;
+                padding: 2rem;
+                cursor: pointer;
+                
+                h3 {
+                    @include subHeading(2rem);
+                }
+
+                i {
+                    font-size: 2rem;
+                }
+            }
+
+            .accordian-content {
+                @include paragraph(1.4rem);
+                padding: 2rem;
+                margin: 0;
+                display: none;
+            }
+        }
+    }
+}
+
+// LOGO SECTION 
+
+.logo-container{
+    margin:5rem 0;
+    .swiper-slide {
+        text-align: center;
+    }
+}
 
 // MEDIA QUEARIES
 @media (max-width:1200px) {

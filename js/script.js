@@ -57,7 +57,7 @@ let accordion = document.querySelectorAll('.accordian');
 accordion.forEach(acco =>{
   acco.addEventListener('click', () => {
     accordion.forEach(newAcco => newAcco.classList.remove('active'));
-    acco.classList.toggle('active');
+    acco.classList.add('active');
   })
  
 });

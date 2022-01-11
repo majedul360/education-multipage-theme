@@ -793,9 +793,39 @@ footer {
     }
 }
 
+// CONTECT SECTION 
 
+.contact {
+    .box-container {
+        @include flex(center);
 
+        .box {
+            flex: 1 1 40rem;
+           img {
+               width: 100%;
+           } 
+        }
 
+        form {
+            flex: 1 1 40rem;
+            border: $border;
+            padding: 2rem;
+            
+            h3 {
+                @include subHeading(2.5rem);
+            }
+
+            .input, textarea {
+                width: 100%;
+                padding: 1rem 1.5rem;
+                font-size: 1.5rem;
+                margin: 1rem 0;
+                border: $border;
+            }
+            
+        }
+    }
+}
 
 
 
